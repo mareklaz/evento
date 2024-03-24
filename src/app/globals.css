@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 /* SCROLLBAR STYLING */
+.state-effects {
+	@apply hover:scale-105 focus:scale-105 active:scale-[1.02] transition;
+}
+
 /* Chrome, Edge, and Safari */
 ::-webkit-scrollbar {
 	width: 10px;
