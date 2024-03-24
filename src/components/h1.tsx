@@ -3,9 +3,17 @@ import { ReactNode } from 'react';
 
 type H1Pros = {
 	children: ReactNode;
-	className: string;
+	className?: string;
 };
 
 export default function H1({ children, className }: H1Pros) {
-	return <h1 className={cn(`text-3xl lg:text-6xl font-bold tracking-tight`, className)}>{children}</h1>;
+	return (
+		<h1
+			className={cn(
+				`text-3xl lg:text-6xl font-bold tracking-tight`,
+				className
+			)}>
+			{children}
+		</h1>
+	);
 }
